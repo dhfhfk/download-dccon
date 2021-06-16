@@ -3,11 +3,13 @@
 
 ## requirements
 
+(pip install -r requirements.txt)
 - tqdm
 - requests
 - json
 - os
-pip install -r requirements.txt
+
+
 
 
 ## License
