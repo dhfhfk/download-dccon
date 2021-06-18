@@ -29,7 +29,7 @@ while True:
         print(e)
     else:
         for item in tqdm(json_data['detail']):
-            filename = item['idx']+'.'+item['ext']
+            filename = item['title']+'.'+item['ext']
             image = s.get(imgdownl_url+item['path'], headers={'Referer': 'https://dccon.dcinside.com/'})
             with open(os.path.join(download_path, filename), 'wb') as fd:
                 for chunk in image.iter_content(chunk_size=128):
